@@ -1,0 +1,132 @@
+[
+  {
+    "request": {
+      "body": "interval=month&currency=JPY&id=test-plan1&name=Test+Plan1&amount=1000",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans"
+    },
+    "response": {
+      "body": "{\n  \"amount\": 1000,\n  \"billing_day\": null,\n  \"created\": 1487408567,\n  \"currency\": \"jpy\",\n  \"id\": \"test-plan1\",\n  \"interval\": \"month\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"name\": \"Test Plan1\",\n  \"object\": \"plan\",\n  \"trial_days\": 0\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 09:02:47 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "236",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "interval=month&currency=JPY&id=test-plan2&name=Test+Plan2&amount=1000",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans"
+    },
+    "response": {
+      "body": "{\n  \"amount\": 1000,\n  \"billing_day\": null,\n  \"created\": 1487408567,\n  \"currency\": \"jpy\",\n  \"id\": \"test-plan2\",\n  \"interval\": \"month\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"name\": \"Test Plan2\",\n  \"object\": \"plan\",\n  \"trial_days\": 0\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 09:02:48 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "236",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans?limit=100"
+    },
+    "response": {
+      "body": "{\n  \"count\": 2,\n  \"data\": [\n    {\n      \"amount\": 1000,\n      \"billing_day\": null,\n      \"created\": 1487408567,\n      \"currency\": \"jpy\",\n      \"id\": \"test-plan2\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan2\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 1000,\n      \"billing_day\": null,\n      \"created\": 1487408567,\n      \"currency\": \"jpy\",\n      \"id\": \"test-plan1\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan1\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    }\n  ],\n  \"has_more\": false,\n  \"object\": \"list\",\n  \"url\": \"/v1/plans\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 09:02:48 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "675",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-plan2"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"test-plan2\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 09:02:48 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "64",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-plan1"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"test-plan1\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 09:02:48 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "64",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

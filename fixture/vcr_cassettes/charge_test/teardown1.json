@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_b8bc48c00797c9b549155dfafa20"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_b8bc48c00797c9b549155dfafa20\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 04:28:49 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

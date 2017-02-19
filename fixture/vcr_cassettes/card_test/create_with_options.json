@@ -1,0 +1,54 @@
+[
+  {
+    "request": {
+      "body": "card[number]=4242424242424242&card[exp_month]=12&card[exp_year]=2029&card[cvc]=123",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/tokens"
+    },
+    "response": {
+      "body": "{\n  \"card\": {\n    \"address_city\": null,\n    \"address_line1\": null,\n    \"address_line2\": null,\n    \"address_state\": null,\n    \"address_zip\": null,\n    \"address_zip_check\": \"unchecked\",\n    \"brand\": \"Visa\",\n    \"country\": null,\n    \"created\": 1487462120,\n    \"customer\": null,\n    \"cvc_check\": \"passed\",\n    \"exp_month\": 12,\n    \"exp_year\": 2029,\n    \"fingerprint\": \"e1d8225886e3a7211127df751c86787f\",\n    \"id\": \"car_8846f7ac69ed20c5e4e10f92fe16\",\n    \"last4\": \"4242\",\n    \"livemode\": false,\n    \"metadata\": {},\n    \"name\": null,\n    \"object\": \"card\"\n  },\n  \"created\": 1487462120,\n  \"id\": \"tok_61b1ae6fd365db6b092bd8fac003\",\n  \"livemode\": false,\n  \"object\": \"token\",\n  \"used\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:55:20 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "682",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "card=tok_61b1ae6fd365db6b092bd8fac003",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_250ed15e04c6215172a6b44527f0/cards"
+    },
+    "response": {
+      "body": "{\n  \"address_city\": null,\n  \"address_line1\": null,\n  \"address_line2\": null,\n  \"address_state\": null,\n  \"address_zip\": null,\n  \"address_zip_check\": \"unchecked\",\n  \"brand\": \"Visa\",\n  \"country\": null,\n  \"created\": 1487462120,\n  \"customer\": \"cus_250ed15e04c6215172a6b44527f0\",\n  \"cvc_check\": \"passed\",\n  \"exp_month\": 12,\n  \"exp_year\": 2029,\n  \"fingerprint\": \"e1d8225886e3a7211127df751c86787f\",\n  \"id\": \"car_8846f7ac69ed20c5e4e10f92fe16\",\n  \"last4\": \"4242\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"name\": null,\n  \"object\": \"card\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:55:20 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "528",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

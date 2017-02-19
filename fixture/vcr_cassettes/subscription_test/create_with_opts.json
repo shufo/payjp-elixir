@@ -1,0 +1,54 @@
+[
+  {
+    "request": {
+      "body": "currency=JPY&id=test-create-a&name=Test+Plan+test-create-a&amount=100&interval=month",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"already_exist_id\",\n    \"message\": \"Plan with ID \\\"test-create-a\\\" already exists.\",\n    \"param\": \"id\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:43 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "182",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "customer=cus_7b74b10619d73859a093e5e60458&plan=test-create-a",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions"
+    },
+    "response": {
+      "body": "{\n  \"canceled_at\": null,\n  \"created\": 1487461243,\n  \"current_period_end\": 1489880443,\n  \"current_period_start\": 1487461243,\n  \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n  \"id\": \"sub_2cd160ac582adec1c80684855b96\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"object\": \"subscription\",\n  \"paused_at\": null,\n  \"plan\": {\n    \"amount\": 100,\n    \"billing_day\": null,\n    \"created\": 1487461146,\n    \"currency\": \"jpy\",\n    \"id\": \"test-create-a\",\n    \"interval\": \"month\",\n    \"livemode\": false,\n    \"metadata\": {},\n    \"name\": \"Test Plan test-create-a\",\n    \"object\": \"plan\",\n    \"trial_days\": 0\n  },\n  \"prorate\": false,\n  \"resumed_at\": null,\n  \"start\": 1487461243,\n  \"status\": \"active\",\n  \"trial_end\": null,\n  \"trial_start\": null\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:43 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "724",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

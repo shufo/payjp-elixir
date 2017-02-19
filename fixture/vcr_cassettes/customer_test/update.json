@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "description=new+description",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_8539a9716c2225b2392b5b265379"
+    },
+    "response": {
+      "body": "{\n  \"cards\": {\n    \"count\": 1,\n    \"data\": [\n      {\n        \"address_city\": null,\n        \"address_line1\": null,\n        \"address_line2\": null,\n        \"address_state\": null,\n        \"address_zip\": null,\n        \"address_zip_check\": \"unchecked\",\n        \"brand\": \"Visa\",\n        \"country\": null,\n        \"created\": 1487467782,\n        \"customer\": \"cus_8539a9716c2225b2392b5b265379\",\n        \"cvc_check\": \"passed\",\n        \"exp_month\": 1,\n        \"exp_year\": 2018,\n        \"fingerprint\": \"e1d8225886e3a7211127df751c86787f\",\n        \"id\": \"car_6043e1b2b1d2a67ee12334acc7c4\",\n        \"last4\": \"4242\",\n        \"livemode\": false,\n        \"metadata\": {\n          \"app_attr1\": \"xyz\",\n          \"app_order_id\": \"ABC123\"\n        },\n        \"name\": \"Joe Test User\",\n        \"object\": \"card\"\n      }\n    ],\n    \"has_more\": false,\n    \"object\": \"list\",\n    \"url\": \"/v1/customers/cus_8539a9716c2225b2392b5b265379/cards\"\n  },\n  \"created\": 1487467783,\n  \"default_card\": \"car_6043e1b2b1d2a67ee12334acc7c4\",\n  \"description\": \"new description\",\n  \"email\": \"test@test.com\",\n  \"id\": \"cus_8539a9716c2225b2392b5b265379\",\n  \"livemode\": false,\n  \"metadata\": {\n    \"app_attr1\": \"xyz\",\n    \"app_order_id\": \"ABC123\"\n  },\n  \"object\": \"customer\",\n  \"subscriptions\": {\n    \"count\": 0,\n    \"data\": [],\n    \"has_more\": false,\n    \"object\": \"list\",\n    \"url\": \"/v1/customers/cus_8539a9716c2225b2392b5b265379/subscriptions\"\n  }\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:29:44 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "1396",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

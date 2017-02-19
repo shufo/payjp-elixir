@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_250ed15e04c6215172a6b44527f0/cards?limit=100"
+    },
+    "response": {
+      "body": "{\n  \"count\": 0,\n  \"data\": [],\n  \"has_more\": false,\n  \"object\": \"list\",\n  \"url\": \"/v1/customers/cus_250ed15e04c6215172a6b44527f0/cards\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:55:23 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "136",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

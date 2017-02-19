@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "name=Other+Plan2",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-plan"
+    },
+    "response": {
+      "body": "{\n  \"amount\": 1000,\n  \"billing_day\": null,\n  \"created\": 1487408563,\n  \"currency\": \"jpy\",\n  \"id\": \"test-plan\",\n  \"interval\": \"month\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"name\": \"Other Plan2\",\n  \"object\": \"plan\",\n  \"trial_days\": 0\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 09:02:45 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "236",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

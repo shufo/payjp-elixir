@@ -1,0 +1,158 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_4f4f1cd3f32a4453b9151f6794c0"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_4f4f1cd3f32a4453b9151f6794c0\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:39:02 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_426cd97c4ab799051cc8baa30d95"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_426cd97c4ab799051cc8baa30d95\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:39:02 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_0db46fe3b3613b47ff3f6a05f39f"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_0db46fe3b3613b47ff3f6a05f39f\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:39:02 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_cd9bd53462694d8ffb7117857cf7"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_cd9bd53462694d8ffb7117857cf7\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:39:03 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_a50a0e6c669a59ceefda85b27f39"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_a50a0e6c669a59ceefda85b27f39\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:39:03 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_a467c21b7bd5c2ca0f230b31b9fd"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_a467c21b7bd5c2ca0f230b31b9fd\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:39:03 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

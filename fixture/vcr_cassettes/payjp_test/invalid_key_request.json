@@ -1,0 +1,29 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic Og==",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"message\": \"You did not provide an API key. You need to provide your API key in the Authorization header, using Basic auth (e.g. 'Authorization: YOUR_SECRET_KEY').\",\n    \"status\": 401,\n    \"type\": \"auth_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 22:04:34 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "234",
+        "Connection": "keep-alive",
+        "Server": "nginx",
+        "Request-Id": "fc27c598-d58e-4dfd-bb02-9472b1b5085b"
+      },
+      "status_code": 401,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions/sub_d6b131aa1219b93e115b32dd7331"
+    },
+    "response": {
+      "body": "{\n  \"canceled_at\": null,\n  \"created\": 1487461241,\n  \"current_period_end\": 1489880441,\n  \"current_period_start\": 1487461241,\n  \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n  \"id\": \"sub_d6b131aa1219b93e115b32dd7331\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"object\": \"subscription\",\n  \"paused_at\": null,\n  \"plan\": {\n    \"amount\": 100,\n    \"billing_day\": null,\n    \"created\": 1487461239,\n    \"currency\": \"jpy\",\n    \"id\": \"test-std\",\n    \"interval\": \"month\",\n    \"livemode\": false,\n    \"metadata\": {},\n    \"name\": \"Test Plan Standard\",\n    \"object\": \"plan\",\n    \"trial_days\": 0\n  },\n  \"prorate\": false,\n  \"resumed_at\": null,\n  \"start\": 1487461241,\n  \"status\": \"active\",\n  \"trial_end\": null,\n  \"trial_start\": null\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:42 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "714",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

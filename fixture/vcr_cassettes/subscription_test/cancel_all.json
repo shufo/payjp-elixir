@@ -1,0 +1,132 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_7b74b10619d73859a093e5e60458/subscriptions?"
+    },
+    "response": {
+      "body": "{\n  \"count\": 5,\n  \"data\": [\n    {\n      \"canceled_at\": null,\n      \"created\": 1487461243,\n      \"current_period_end\": 1489880443,\n      \"current_period_start\": 1487461243,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_9ea986d04f14f5c9f79c09a859de\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461147,\n        \"currency\": \"jpy\",\n        \"id\": \"test-create-b\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-create-b\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461243,\n      \"status\": \"active\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": null,\n      \"created\": 1487461243,\n      \"current_period_end\": 1489880443,\n      \"current_period_start\": 1487461243,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_2cd160ac582adec1c80684855b96\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461146,\n        \"currency\": \"jpy\",\n        \"id\": \"test-create-a\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-create-a\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461243,\n      \"status\": \"active\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": null,\n      \"created\": 1487461241,\n      \"current_period_end\": 1489880441,\n      \"current_period_start\": 1487461241,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_d01f40d1809b1a2b45bb8bc09367\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461144,\n        \"currency\": \"jpy\",\n        \"id\": \"test-dla\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-dla\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461241,\n      \"status\": \"active\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": 1487461246,\n      \"created\": 1487461241,\n      \"current_period_end\": 1489880445,\n      \"current_period_start\": 1487461245,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_c28668f4532136bfeec6a286d831\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461143,\n        \"currency\": \"jpy\",\n        \"id\": \"test-dly\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-dly\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461241,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": 1487461245,\n      \"created\": 1487461241,\n      \"current_period_end\": 1489880444,\n      \"current_period_start\": 1487461244,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_d6b131aa1219b93e115b32dd7331\",\n      \"livemode\": false,\n      \"metadata\": {\n        \"test\": \"foo\"\n      },\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461144,\n        \"currency\": \"jpy\",\n        \"id\": \"test-dlz\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-dlz\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461241,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    }\n  ],\n  \"has_more\": false,\n  \"object\": \"list\",\n  \"url\": \"/v1/customers/cus_7b74b10619d73859a093e5e60458/subscriptions\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:46 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "4411",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions/sub_9ea986d04f14f5c9f79c09a859de/cancel"
+    },
+    "response": {
+      "body": "{\n  \"canceled_at\": 1487461246,\n  \"created\": 1487461243,\n  \"current_period_end\": 1489880443,\n  \"current_period_start\": 1487461243,\n  \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n  \"id\": \"sub_9ea986d04f14f5c9f79c09a859de\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"object\": \"subscription\",\n  \"paused_at\": null,\n  \"plan\": {\n    \"amount\": 100,\n    \"billing_day\": null,\n    \"created\": 1487461147,\n    \"currency\": \"jpy\",\n    \"id\": \"test-create-b\",\n    \"interval\": \"month\",\n    \"livemode\": false,\n    \"metadata\": {},\n    \"name\": \"Test Plan test-create-b\",\n    \"object\": \"plan\",\n    \"trial_days\": 0\n  },\n  \"prorate\": false,\n  \"resumed_at\": null,\n  \"start\": 1487461243,\n  \"status\": \"canceled\",\n  \"trial_end\": null,\n  \"trial_start\": null\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:47 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "732",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions/sub_2cd160ac582adec1c80684855b96/cancel"
+    },
+    "response": {
+      "body": "{\n  \"canceled_at\": 1487461247,\n  \"created\": 1487461243,\n  \"current_period_end\": 1489880443,\n  \"current_period_start\": 1487461243,\n  \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n  \"id\": \"sub_2cd160ac582adec1c80684855b96\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"object\": \"subscription\",\n  \"paused_at\": null,\n  \"plan\": {\n    \"amount\": 100,\n    \"billing_day\": null,\n    \"created\": 1487461146,\n    \"currency\": \"jpy\",\n    \"id\": \"test-create-a\",\n    \"interval\": \"month\",\n    \"livemode\": false,\n    \"metadata\": {},\n    \"name\": \"Test Plan test-create-a\",\n    \"object\": \"plan\",\n    \"trial_days\": 0\n  },\n  \"prorate\": false,\n  \"resumed_at\": null,\n  \"start\": 1487461243,\n  \"status\": \"canceled\",\n  \"trial_end\": null,\n  \"trial_start\": null\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:47 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "732",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions/sub_d01f40d1809b1a2b45bb8bc09367/cancel"
+    },
+    "response": {
+      "body": "{\n  \"canceled_at\": 1487461247,\n  \"created\": 1487461241,\n  \"current_period_end\": 1489880441,\n  \"current_period_start\": 1487461241,\n  \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n  \"id\": \"sub_d01f40d1809b1a2b45bb8bc09367\",\n  \"livemode\": false,\n  \"metadata\": {},\n  \"object\": \"subscription\",\n  \"paused_at\": null,\n  \"plan\": {\n    \"amount\": 100,\n    \"billing_day\": null,\n    \"created\": 1487461144,\n    \"currency\": \"jpy\",\n    \"id\": \"test-dla\",\n    \"interval\": \"month\",\n    \"livemode\": false,\n    \"metadata\": {},\n    \"name\": \"Test Plan test-dla\",\n    \"object\": \"plan\",\n    \"trial_days\": 0\n  },\n  \"prorate\": false,\n  \"resumed_at\": null,\n  \"start\": 1487461241,\n  \"status\": \"canceled\",\n  \"trial_end\": null,\n  \"trial_start\": null\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:47 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "722",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions?limit=100"
+    },
+    "response": {
+      "body": "{\n  \"count\": 5,\n  \"data\": [\n    {\n      \"canceled_at\": 1487461246,\n      \"created\": 1487461243,\n      \"current_period_end\": 1489880443,\n      \"current_period_start\": 1487461243,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_9ea986d04f14f5c9f79c09a859de\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461147,\n        \"currency\": \"jpy\",\n        \"id\": \"test-create-b\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-create-b\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461243,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": 1487461247,\n      \"created\": 1487461243,\n      \"current_period_end\": 1489880443,\n      \"current_period_start\": 1487461243,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_2cd160ac582adec1c80684855b96\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461146,\n        \"currency\": \"jpy\",\n        \"id\": \"test-create-a\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-create-a\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461243,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": 1487461247,\n      \"created\": 1487461241,\n      \"current_period_end\": 1489880441,\n      \"current_period_start\": 1487461241,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_d01f40d1809b1a2b45bb8bc09367\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461144,\n        \"currency\": \"jpy\",\n        \"id\": \"test-dla\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-dla\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461241,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": 1487461246,\n      \"created\": 1487461241,\n      \"current_period_end\": 1489880445,\n      \"current_period_start\": 1487461245,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_c28668f4532136bfeec6a286d831\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461143,\n        \"currency\": \"jpy\",\n        \"id\": \"test-dly\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-dly\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461241,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    },\n    {\n      \"canceled_at\": 1487461245,\n      \"created\": 1487461241,\n      \"current_period_end\": 1489880444,\n      \"current_period_start\": 1487461244,\n      \"customer\": \"cus_7b74b10619d73859a093e5e60458\",\n      \"id\": \"sub_d6b131aa1219b93e115b32dd7331\",\n      \"livemode\": false,\n      \"metadata\": {\n        \"test\": \"foo\"\n      },\n      \"object\": \"subscription\",\n      \"paused_at\": null,\n      \"plan\": {\n        \"amount\": 100,\n        \"billing_day\": null,\n        \"created\": 1487461144,\n        \"currency\": \"jpy\",\n        \"id\": \"test-dlz\",\n        \"interval\": \"month\",\n        \"livemode\": false,\n        \"metadata\": {},\n        \"name\": \"Test Plan test-dlz\",\n        \"object\": \"plan\",\n        \"trial_days\": 0\n      },\n      \"prorate\": false,\n      \"resumed_at\": null,\n      \"start\": 1487461241,\n      \"status\": \"canceled\",\n      \"trial_end\": null,\n      \"trial_start\": null\n    }\n  ],\n  \"has_more\": false,\n  \"object\": \"list\",\n  \"url\": \"/v1/subscriptions\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:47 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "4392",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

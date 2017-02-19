@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/accounts"
+    },
+    "response": {
+      "body": "{\n  \"created\": 1485168043,\n  \"customer\": {\n    \"address_city\": null,\n    \"address_line1\": null,\n    \"address_line2\": null,\n    \"address_state\": null,\n    \"address_zip\": null,\n    \"cards\": {\n      \"count\": 0,\n      \"data\": [],\n      \"has_more\": false,\n      \"object\": \"list\",\n      \"url\": \"/v1/accounts/cards\"\n    },\n    \"country\": null,\n    \"created\": 1485168043,\n    \"email\": \"example@example.com\",\n    \"first_name\": null,\n    \"id\": \"acct_cus_5bf5d787608c15199a38cb8\",\n    \"last_name\": null,\n    \"phone\": null,\n    \"updated\": 1485168043\n  },\n  \"email\": \"example@example.com\",\n  \"id\": \"acct_51031bbe2caa3eaf5bd4d431817\",\n  \"merchant\": {\n    \"bank_enabled\": false,\n    \"brands_accepted\": [],\n    \"business_type\": null,\n    \"charge_type\": null,\n    \"contact_phone\": null,\n    \"country\": null,\n    \"created\": 1485168043,\n    \"currencies_supported\": [\n      \"jpy\"\n    ],\n    \"default_currency\": \"jpy\",\n    \"details_submitted\": false,\n    \"id\": \"acct_mch_c4162674dc89bd0f1d9facc\",\n    \"livemode_activated_at\": null,\n    \"livemode_enabled\": false,\n    \"object\": \"merchant\",\n    \"product_detail\": null,\n    \"product_name\": null,\n    \"product_type\": null,\n    \"site_published\": null,\n    \"url\": null\n  },\n  \"object\": \"account\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 21:15:06 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "1230",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans?limit=10&since=0"
+    },
+    "response": {
+      "body": "{\n  \"count\": 2,\n  \"data\": [\n    {\n      \"amount\": 1000,\n      \"billing_day\": null,\n      \"created\": 1487468131,\n      \"currency\": \"jpy\",\n      \"id\": \"test-dlx\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan Deluxe\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487468130,\n      \"currency\": \"jpy\",\n      \"id\": \"test-std\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan Standard\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    }\n  ],\n  \"has_more\": false,\n  \"object\": \"list\",\n  \"url\": \"/v1/plans\"\n}",
+      "headers": {
+        "Date": "Sun, 19 Feb 2017 01:35:31 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "684",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

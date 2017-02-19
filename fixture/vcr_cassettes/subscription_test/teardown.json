@@ -1,0 +1,314 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions/sub_d6b131aa1219b93e115b32dd7331/cancel"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"already_canceled\",\n    \"message\": \"Subscription \\\"sub_d6b131aa1219b93e115b32dd7331\\\" has already been canceled.\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:48 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "193",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/subscriptions/sub_c28668f4532136bfeec6a286d831/cancel"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"already_canceled\",\n    \"message\": \"Subscription \\\"sub_c28668f4532136bfeec6a286d831\\\" has already been canceled.\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "193",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/customers/cus_7b74b10619d73859a093e5e60458"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"cus_7b74b10619d73859a093e5e60458\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "86",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans?limit=100"
+    },
+    "response": {
+      "body": "{\n  \"count\": 8,\n  \"data\": [\n    {\n      \"amount\": 1000,\n      \"billing_day\": null,\n      \"created\": 1487461239,\n      \"currency\": \"jpy\",\n      \"id\": \"test-dlx\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan Deluxe\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461239,\n      \"currency\": \"jpy\",\n      \"id\": \"test-std\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan Standard\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461147,\n      \"currency\": \"jpy\",\n      \"id\": \"test-create-b\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan test-create-b\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461146,\n      \"currency\": \"jpy\",\n      \"id\": \"test-create-a\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan test-create-a\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461144,\n      \"currency\": \"jpy\",\n      \"id\": \"test-dla\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan test-dla\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461144,\n      \"currency\": \"jpy\",\n      \"id\": \"test-dlz\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan test-dlz\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461143,\n      \"currency\": \"jpy\",\n      \"id\": \"test-dly\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan test-dly\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    },\n    {\n      \"amount\": 100,\n      \"billing_day\": null,\n      \"created\": 1487461143,\n      \"currency\": \"jpy\",\n      \"id\": \"test-cancel-all\",\n      \"interval\": \"month\",\n      \"livemode\": false,\n      \"metadata\": {},\n      \"name\": \"Test Plan test-cancel-all\",\n      \"object\": \"plan\",\n      \"trial_days\": 0\n    }\n  ],\n  \"has_more\": false,\n  \"object\": \"list\",\n  \"url\": \"/v1/plans\"\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "2488",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-dlx"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"test-dlx\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "62",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-std"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"test-std\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "62",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-create-b"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"exist_subscribers\",\n    \"message\": \"You cannot delete Plan \\\"test-create-b\\\" that is being subscribed. Make sure the plan has no subscriber before deleting it.\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "241",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-create-a"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"exist_subscribers\",\n    \"message\": \"You cannot delete Plan \\\"test-create-a\\\" that is being subscribed. Make sure the plan has no subscriber before deleting it.\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "241",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-dla"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"exist_subscribers\",\n    \"message\": \"You cannot delete Plan \\\"test-dla\\\" that is being subscribed. Make sure the plan has no subscriber before deleting it.\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "236",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-dlz"
+    },
+    "response": {
+      "body": "{\n  \"error\": {\n    \"code\": \"exist_subscribers\",\n    \"message\": \"You cannot delete Plan \\\"test-dlz\\\" that is being subscribed. Make sure the plan has no subscriber before deleting it.\",\n    \"status\": 400,\n    \"type\": \"client_error\"\n  }\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:49 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "236",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 400,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-dly"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"test-dly\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:50 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "62",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  },
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "Basic non_empty_secret_key_string",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "User-Agent": "Payjp/v1 payjp/0.1.0"
+      },
+      "method": "delete",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.pay.jp/v1/plans/test-cancel-all"
+    },
+    "response": {
+      "body": "{\n  \"deleted\": true,\n  \"id\": \"test-cancel-all\",\n  \"livemode\": false\n}",
+      "headers": {
+        "Date": "Sat, 18 Feb 2017 23:40:50 GMT",
+        "Content-Type": "application/json",
+        "Content-Length": "69",
+        "Connection": "keep-alive",
+        "Server": "nginx"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
