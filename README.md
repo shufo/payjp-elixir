@@ -1,5 +1,10 @@
 # PayJP for Elixir
 
+[![Travis](https://img.shields.io/travis/shufo/payjp-elixir.svg)](https://travis-ci.org/shufo/payjp-elixir)
+[![Hex.pm](https://img.shields.io/hexpm/v/payjp.svg)](https://hex.pm/packages/payjp)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-9768d1.svg)](https://hexdocs.pm/payjp)
+[![Coverage Status](https://coveralls.io/repos/github/shufo/payjp-elixir/badge.svg?branch=master)](https://coveralls.io/github/shufo/payjp-elixir?branch=master)
+
 An Elixir library for working with [PAY.JP](https://pay.jp/).
 
 Features:
