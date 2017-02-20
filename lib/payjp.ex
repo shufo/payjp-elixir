@@ -4,14 +4,14 @@ defmodule Payjp do
     This module contains the Application that you can use to perform
     transactions on payjp API.
     ### Configuring
-    By default the STRIPE_SECRET_KEY environment variable is used to find
+    By default the PAYJP_SECRET_KEY environment variable is used to find
     your API key for Payjp. You can also manually set your API key by
     configuring the :payjp application. You can see the default
     configuration in the default_config/0 private function at the bottom of
     this file. The value for platform client id is optional.
 
-      config :payjp, secret_key: YOUR_STRIPE_KEY
-      config :payjp, platform_client_id: STRIPE_PLATFORM_CLIENT_ID
+      config :payjp, secret_key: YOUR_PAYJP_KEY
+      config :payjp, platform_client_id: PAYJP_PLATFORM_CLIENT_ID
   """
 
   # Let's build on top of HTTPoison
@@ -29,7 +29,7 @@ defmodule Payjp do
 
 
   @doc """
-  Grabs STRIPE_SECRET_KEY from system ENV
+  Grabs PAYJP_SECRET_KEY from system ENV
   Returns binary
   """
   def config_or_env_key do
@@ -37,11 +37,11 @@ defmodule Payjp do
   end
 
   @doc """
-  Grabs STRIPE_PLATFORM_CLIENT_ID from system ENV
+  Grabs PAYJP_PLATFORM_CLIENT_ID from system ENV
   Returns binary
   """
   def config_or_env_platform_client_id do
-    Application.get_env(:payjp, :platform_client_id) || System.get_env "STRIPE_PLATFORM_CLIENT_ID"
+    Application.get_env(:payjp, :platform_client_id) || System.get_env "PAYJP_PLATFORM_CLIENT_ID"
   end
 
   @doc """
