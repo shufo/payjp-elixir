@@ -35,6 +35,7 @@ defmodule Payjp.Mixfile do
     [
       {:httpoison, ">= 0.0.0" },
       {:poison, ">= 0.0.0", optional: true},
+      {:retry, ">= 0.0.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:earmark, ">= 0.0.0", only: :dev},
       {:excoveralls, ">= 0.0.0", only: :test},

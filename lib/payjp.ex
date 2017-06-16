@@ -16,6 +16,7 @@ defmodule Payjp do
 
   # Let's build on top of HTTPoison
   use HTTPoison.Base
+  use Retry
 
   defmodule MissingSecretKeyError do
     defexception message: """
@@ -92,7 +93,9 @@ defmodule Payjp do
         |> Map.to_list
 
     options = Keyword.merge(httpoison_request_options(), options)
-    {:ok, response} = request(method, endpoint, rb, rh, options)
+    {:ok, response} = retry with: exp_backoff |> randomize |> expiry(60_000) do
+      request(method, endpoint, rb, rh, options)
+    end
     response.body
   end
 
