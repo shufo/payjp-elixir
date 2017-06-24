@@ -18,6 +18,11 @@ defmodule Payjp do
   use HTTPoison.Base
   use Retry
 
+  @default_httpoison_options [
+    timeout: 30000,
+    recv_timeout: 80000,
+  ]
+
   defmodule MissingSecretKeyError do
     defexception message: """
       The secret_key setting is required so that we can report the
@@ -147,6 +152,7 @@ defmodule Payjp do
   end
 
   defp httpoison_request_options() do
-    Application.get_env(:payjp, :httpoison_options, [])
+    @default_httpoison_options
+    |> Keyword.merge(Application.get_env(:payjp, :httpoison_options, []))
   end
 end
