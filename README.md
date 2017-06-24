@@ -157,6 +157,20 @@ Payjp.Charges.create(1000, customer: customer.id)
 
 more usage is available at [Documentation](https://hexdocs.pm/payjp/)
 
+## Options
+
+You can override the request configuration with HTTPoison options.
+
+`config.exs`
+
+```elixir
+config :payjp,
+  httpoison_options: [
+    timeout: 60000, # default: 30000
+    recv_timeout: 100000, # default: 80000
+  ]
+```
+
 ## Testing
 If you start contributing and you want to run mix test, first you need to export PAYJP_SECRET_KEY environment variable in the same shell as the one you will be running mix test in.
 
