@@ -323,7 +323,7 @@ defmodule Payjp.Subscriptions do
         case resp[:has_more] do
           true ->
             last_sub = List.last( resp[:data] )
-            all(resp[:data] ++ accum, key, since: last_sub["created"], limit: @max_fetch_sizep)
+            all(resp[:data] ++ accum, key, until: last_sub["created"], limit: @max_fetch_sizep)
           false ->
             result = resp[:data] ++ accum
             {:ok, result}

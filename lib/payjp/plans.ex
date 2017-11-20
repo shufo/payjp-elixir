@@ -185,7 +185,7 @@ defmodule Payjp.Plans do
           case resp[:has_more] do
           true ->
               last_plan = List.last( resp[:data] )
-              all( key, resp[:data] ++ accum, since: last_plan["created"], limit: @max_fetch_size)
+              all( key, resp[:data] ++ accum, until: last_plan["created"], limit: @max_fetch_size)
           false ->
               result = resp[:data] ++ accum
               {:ok, result}
