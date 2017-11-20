@@ -324,7 +324,7 @@ defmodule Payjp.Cards do
         case resp[:has_more] do
           true ->
             last_sub = List.last( resp[:data] )
-            all(owner_type, owner_id, key, resp[:data] ++ accum, since: last_sub["created"], limit: @max_fetch_size)
+            all(owner_type, owner_id, key, resp[:data] ++ accum, until: last_sub["created"], limit: @max_fetch_size)
           false ->
             result = resp[:data] ++ accum
             {:ok, result}
