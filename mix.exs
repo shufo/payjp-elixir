@@ -3,7 +3,7 @@ defmodule Payjp.Mixfile do
 
   def project do
     [app: :payjp,
-     version: "0.1.4",
+     version: "0.1.5",
      elixir: "~> 1.4",
      description: description(),
      build_embedded: Mix.env == :prod,
