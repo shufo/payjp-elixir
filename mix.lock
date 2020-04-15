@@ -18,5 +18,5 @@
   "mock": {:hex, :mock, "0.2.1", "bfdba786903e77f9c18772dee472d020ceb8ef000783e737725a4c8f54ad28ec", [:mix], [{:meck, "~> 0.8.2", [hex: :meck, repo: "hexpm", optional: false]}], "hexpm", "d440b817e4e3505fe2d17963b7e783ae72875011dc6ac757c21904a8cc3578ac"},
   "nimble_parsec": {:hex, :nimble_parsec, "0.5.3", "def21c10a9ed70ce22754fdeea0810dafd53c2db3219a0cd54cf5526377af1c6", [:mix], [], "hexpm", "589b5af56f4afca65217a1f3eb3fee7e79b09c40c742fddc1c312b3ac0b3399f"},
   "poison": {:hex, :poison, "3.1.0", "d9eb636610e096f86f25d9a46f35a9facac35609a7591b3be3326e99a0484665", [:mix], [], "hexpm", "fec8660eb7733ee4117b85f55799fd3833eb769a6df71ccf8903e8dc5447cfce"},
-  "retry": {:hex, :retry, "0.7.0", "894a32223433501b33e95cc54bda72f3d162a930d2eba749ed7766f05721986d", [:mix], [], "hexpm", "27bcde19dd0067d0221b2ccc219c1939e7e5c59b1bb144a97db3709c46edf49a"},
+  "retry": {:hex, :retry, "0.14.0", "751c0f6db0b5127acf346ea6f6c363ec4588320db785c62aa51776b4d280bf07", [:mix], [], "hexpm", "5c158bccf5e4de2a13d044b9930ceb7e7499c29e3fccd7c96f131a6b83a1cff3"},
   "ssl_verify_fun": {:hex, :ssl_verify_fun, "1.1.1", "28a4d65b7f59893bc2c7de786dec1e1555bd742d336043fe644ae956c3497fbe", [:make, :rebar], [], "hexpm", "4f8805eb5c8a939cf2359367cb651a3180b27dfb48444846be2613d79355d65e"}}
