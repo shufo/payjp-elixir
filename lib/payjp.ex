@@ -98,8 +98,12 @@ defmodule Payjp do
         |> Map.to_list
 
     options = Keyword.merge(httpoison_request_options(), options)
-    {:ok, response} = retry with: exp_backoff |> randomize |> expiry(60_000) do
+    {:ok, response} = retry with: exponential_backoff |> randomize |> expiry(60_000) do
       request(method, endpoint, rb, rh, options)
+    after
+      result -> result
+    else
+      error -> error
     end
     response.body
   end
